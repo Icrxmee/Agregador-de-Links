@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,700;1,700&display=swap');
 
 * {
     margin: 0;
@@ -6,11 +6,17 @@
     box-sizing: border-box
 }
 
+html {
+    min-height: 100%;
+}
 
 body{
+    min-height: 100vh;
+    min-height: 100dvh;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-image: url(./assets/assets/tela.\ celualr.jpg);
+    background-color: #0b1524;
+    background-image: url(assets/assets/a5cb1e2c-9025-4f24-90db-2b16a6bea183.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -24,6 +30,7 @@ body{
 }
 
 #avatar{
+    
     width: 112px;
     height: auto;
     margin: 24px auto 0;
@@ -46,4 +53,73 @@ body{
     font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
+}
+
+#Redesprofissionais,
+#Outrasredes{
+    margin-top: 24px;
+    margin-bottom: 38px;
+    margin-inline: auto;
+
+    width: fit-content;
+    max-width: 100%;
+    padding-inline: 28px;
+    padding-block: 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+
+    background: #2a3444;
+    border: none;
+    border-radius: 9999px;
+
+    box-shadow: 5px 7px 0 #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+ul li a,
+ul li a:visited,
+ul li a:active {
+    color: #fff;
+}
+
+ul li a{
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px 16px 20px;
+    align-items: center;
+
+    background: #3b4b5e;
+    border: none;
+    border-left: 10px solid #fff;
+    border-radius: 0;
+
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    text-decoration: none;
+
+    transition: background 0.2s ease;
+}
+
+ul:first-of-type li:first-child a {
+    font-style: italic;
+}
+
+ul li a:hover{
+    background: #2f3c4d;
 }
